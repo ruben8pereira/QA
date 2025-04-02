@@ -1,10 +1,9 @@
-package Controllers;
+package controllers;
 
-import Domain.Attraction;
-import Domain.Sale;
-import Model.AttractionsRepository;
-import Model.SalesRepository;
-import Tools.FileManager;
+import domain.Attraction;
+import domain.Sale;
+import model.AttractionsRepository;
+import model.SalesRepository;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;

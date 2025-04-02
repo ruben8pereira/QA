@@ -21,8 +21,6 @@ class AdminControllerTest {
     void getTotalProfit() {
         double expectedProfit = adminController.getTotalProfit();
 
-        assertEquals(expectedProfit, adminController.getTotalProfit(), 0.001);
-
         assertNotEquals(0.0, adminController.getTotalProfit());
 
         assertTrue(adminController.getTotalProfit() > -100000);

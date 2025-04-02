@@ -1,7 +1,7 @@
-package Views;
+package views;
 
-import Controllers.LoginController;
-import Tools.FileManager;
+import controllers.LoginController;
+import tools.FileManager;
 
 import java.io.FileNotFoundException;
 import java.util.InputMismatchException;

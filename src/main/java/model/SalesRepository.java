@@ -1,7 +1,7 @@
-package Model;
+package model;
 
-import Domain.Sale;
-import Tools.CSVReader;
+import domain.Sale;
+import tools.CSVReader;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;

@@ -1,8 +1,7 @@
-package Controllers;
+package controllers;
 
-import Domain.User;
-import Model.UsersRepository;
-import Tools.FileManager;
+import domain.User;
+import model.UsersRepository;
 
 import java.io.FileNotFoundException;
 

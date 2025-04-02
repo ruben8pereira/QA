@@ -1,4 +1,4 @@
-import Views.LoginView;
+import views.LoginView;
 
 import java.io.FileNotFoundException;
 

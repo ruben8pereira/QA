@@ -1,8 +1,8 @@
-package Views;
+package views;
 
-import Controllers.CustomerController;
-import Domain.Attraction;
-import Tools.FileManager;
+import controllers.CustomerController;
+import domain.Attraction;
+import tools.FileManager;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;

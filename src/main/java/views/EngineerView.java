@@ -1,8 +1,8 @@
-package Views;
+package views;
 
-import Controllers.EngineerController;
-import Domain.Attraction;
-import Tools.FileManager;
+import controllers.EngineerController;
+import domain.Attraction;
+import tools.FileManager;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;

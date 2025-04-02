@@ -1,9 +1,9 @@
-package Tools;
+package tools;
 
-import Domain.Attraction;
-import Domain.Cost;
-import Domain.Sale;
-import Domain.User;
+import domain.Attraction;
+import domain.Cost;
+import domain.Sale;
+import domain.User;
 
 import java.io.File;
 import java.io.FileNotFoundException;
