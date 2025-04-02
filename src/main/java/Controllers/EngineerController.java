@@ -13,9 +13,9 @@ public class EngineerController {
     private AttractionsRepository attractionsRepository;
     private SalesRepository salesRepository;
 
-    public EngineerController() throws FileNotFoundException {
-        this.attractionsRepository = new AttractionsRepository(FileManager.CESAELAND_ATRACTIONS);
-        this.salesRepository = new SalesRepository(FileManager.CESAELAND_SALES);
+    public EngineerController(String attractionsFilePath, String salesFilePath) throws FileNotFoundException {
+        this.attractionsRepository = new AttractionsRepository(attractionsFilePath);
+        this.salesRepository = new SalesRepository(salesFilePath);
     }
 
     /**

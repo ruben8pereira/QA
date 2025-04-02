@@ -1,6 +1,7 @@
 package Views;
 
 import Controllers.AdminController;
+import Tools.FileManager;
 
 import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
@@ -10,7 +11,7 @@ public class AdminView {
     private AdminController adminController;
 
     public AdminView() throws FileNotFoundException {
-        this.adminController = new AdminController();
+        this.adminController = new AdminController(FileManager.CESAELAND_ATRACTIONS, FileManager.CESAELAND_SALES, FileManager.CESAELAND_COSTS, FileManager.CESAELAND_LOGINS);
     }
 
     /**

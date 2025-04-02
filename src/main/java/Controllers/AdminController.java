@@ -19,11 +19,11 @@ public class AdminController {
     private CostsRepository costsRepository;
     private UsersRepository usersRepository;
 
-    public AdminController() throws FileNotFoundException {
-        this.attractionsRepository = new AttractionsRepository(FileManager.CESAELAND_ATRACTIONS);
-        this.salesRepository = new SalesRepository(FileManager.CESAELAND_SALES);
-        this.costsRepository = new CostsRepository(FileManager.CESAELAND_COSTS);
-        this.usersRepository = new UsersRepository(FileManager.CESAELAND_LOGINS);
+    public AdminController(String attractionsFilePath, String salesFilePath, String costsFilePath, String usersFilePath) throws FileNotFoundException {
+        this.attractionsRepository = new AttractionsRepository(attractionsFilePath);
+        this.salesRepository = new SalesRepository(salesFilePath);
+        this.costsRepository = new CostsRepository(costsFilePath);
+        this.usersRepository = new UsersRepository(usersFilePath);
     }
 
     /**

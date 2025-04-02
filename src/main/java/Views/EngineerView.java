@@ -2,6 +2,7 @@ package Views;
 
 import Controllers.EngineerController;
 import Domain.Attraction;
+import Tools.FileManager;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ public class EngineerView {
     private EngineerController engineerController;
 
     public EngineerView() throws FileNotFoundException {
-        this.engineerController = new EngineerController();
+        this.engineerController = new EngineerController(FileManager.CESAELAND_ATRACTIONS, FileManager.CESAELAND_SALES);
     }
 
     /**

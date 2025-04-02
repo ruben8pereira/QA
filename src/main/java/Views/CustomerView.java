@@ -2,6 +2,7 @@ package Views;
 
 import Controllers.CustomerController;
 import Domain.Attraction;
+import Tools.FileManager;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ public class CustomerView {
     private CustomerController customerController;
 
     public CustomerView() throws FileNotFoundException {
-        this.customerController = new CustomerController();
+        this.customerController = new CustomerController(FileManager.CESAELAND_ATRACTIONS, FileManager.CESAELAND_SALES);
     }
 
     /**

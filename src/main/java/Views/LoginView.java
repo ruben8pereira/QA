@@ -1,6 +1,7 @@
 package Views;
 
 import Controllers.LoginController;
+import Tools.FileManager;
 
 import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
@@ -10,7 +11,7 @@ public class LoginView {
     private LoginController loginController;
 
     public LoginView() throws FileNotFoundException {
-        this.loginController = new LoginController();
+        this.loginController = new LoginController(FileManager.CESAELAND_LOGINS);
     }
 
     /**

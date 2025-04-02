@@ -12,9 +12,9 @@ public class CustomerController {
     private AttractionsRepository attractionsRepository;
     private SalesRepository salesRepository;
 
-    public CustomerController() throws FileNotFoundException {
-        this.attractionsRepository = new AttractionsRepository(FileManager.CESAELAND_ATRACTIONS);
-        this.salesRepository = new SalesRepository(FileManager.CESAELAND_SALES);
+    public CustomerController(String attractionsFilePath, String salesFilePath) throws FileNotFoundException {
+        this.attractionsRepository = new AttractionsRepository(attractionsFilePath);
+        this.salesRepository = new SalesRepository(salesFilePath);
     }
 
     /**

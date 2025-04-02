@@ -9,8 +9,8 @@ import java.io.FileNotFoundException;
 public class LoginController {
     private UsersRepository userRepository;
 
-    public LoginController(String filePath) throws FileNotFoundException {
-        this.userRepository = new UsersRepository(filePath);
+    public LoginController() throws FileNotFoundException {
+        this.userRepository = new UsersRepository(FileManager.CESAELAND_LOGINS);
     }
 
     /**
