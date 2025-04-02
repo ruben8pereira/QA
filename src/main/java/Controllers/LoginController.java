@@ -2,6 +2,7 @@ package Controllers;
 
 import Domain.User;
 import Model.UsersRepository;
+import Tools.FileManager;
 
 import java.io.FileNotFoundException;
 
@@ -9,7 +10,7 @@ public class LoginController {
     private UsersRepository userRepository;
 
     public LoginController() throws FileNotFoundException {
-        this.userRepository = new UsersRepository("src/Resources/Cesaeland_logins.csv");
+        this.userRepository = new UsersRepository(FileManager.CESAELAND_LOGINS);
     }
 
     /**

@@ -8,6 +8,7 @@ import Model.AttractionsRepository;
 import Model.CostsRepository;
 import Model.SalesRepository;
 import Model.UsersRepository;
+import Tools.FileManager;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -19,10 +20,10 @@ public class AdminController {
     private UsersRepository usersRepository;
 
     public AdminController() throws FileNotFoundException {
-        this.attractionsRepository = new AttractionsRepository("src/Resources/Cesaeland_atracoes.csv");
-        this.salesRepository = new SalesRepository("src/Resources/Cesaeland_vendas.csv");
-        this.costsRepository = new CostsRepository("src/Resources/Cesaeland_custos.csv");
-        this.usersRepository = new UsersRepository("src/Resources/Cesaeland_logins.csv");
+        this.attractionsRepository = new AttractionsRepository(FileManager.CESAELAND_ATRACTIONS);
+        this.salesRepository = new SalesRepository(FileManager.CESAELAND_SALES);
+        this.costsRepository = new CostsRepository(FileManager.CESAELAND_COSTS);
+        this.usersRepository = new UsersRepository(FileManager.CESAELAND_LOGINS);
     }
 
     /**

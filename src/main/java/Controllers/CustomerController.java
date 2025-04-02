@@ -3,6 +3,7 @@ package Controllers;
 import Domain.Attraction;
 import Model.AttractionsRepository;
 import Model.SalesRepository;
+import Tools.FileManager;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -12,8 +13,8 @@ public class CustomerController {
     private SalesRepository salesRepository;
 
     public CustomerController() throws FileNotFoundException {
-        this.attractionsRepository = new AttractionsRepository("src/Resources/Cesaeland_atracoes.csv");
-        this.salesRepository = new SalesRepository("src/Resources/Cesaeland_vendas.csv");
+        this.attractionsRepository = new AttractionsRepository(FileManager.CESAELAND_ATRACTIONS);
+        this.salesRepository = new SalesRepository(FileManager.CESAELAND_SALES);
     }
 
     /**
