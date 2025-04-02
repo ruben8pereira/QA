@@ -50,8 +50,7 @@ class EngineerControllerTest {
         for (Attraction attraction : attractions) {
             int tickets = engineerController.getTicketsUntilReview(attraction);
 
-            assertTrue(tickets >= 0 && tickets < 50,
-                    "For attraction " + attraction.getId() + ", tickets until review: " + tickets);
+            assertTrue(tickets >= 0 && tickets < 50, "For attraction " + attraction.getId() + ", tickets until review: " + tickets);
         }
     }
 }
