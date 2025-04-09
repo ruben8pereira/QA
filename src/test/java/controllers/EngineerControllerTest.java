@@ -21,7 +21,7 @@ class EngineerControllerTest {
     }
 
     @Test
-    void getUpcomingReviews() {
+    void getUpcomingReviewsTest() {
         ArrayList<Attraction> upcomingReviews = engineerController.getUpcomingReviews();
 
         assertNotNull(upcomingReviews);
@@ -36,7 +36,7 @@ class EngineerControllerTest {
     }
 
     @Test
-    void getTicketsUntilReview() throws FileNotFoundException {
+    void getTicketsUntilReviewTest() throws FileNotFoundException {
         AttractionsRepository attractionsRepository = new AttractionsRepository(FileManager.CESAELAND_ATRACTIONS_TEST);
 
         ArrayList<Attraction> attractions = attractionsRepository.getAttractionsList();

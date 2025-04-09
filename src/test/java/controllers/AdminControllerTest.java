@@ -18,7 +18,7 @@ class AdminControllerTest {
     }
 
     @Test
-    void getTotalProfit() {
+    void getTotalProfitTest() {
         double expectedProfit = adminController.getTotalProfit();
 
         assertNotEquals(0.0, adminController.getTotalProfit());
